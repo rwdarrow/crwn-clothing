@@ -13,7 +13,7 @@ export const MenuItemContainer = styled.div`
   overflow: hidden;
   &:hover {
     cursor: pointer;
-    & .background-image {
+    & .background-image-container {
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
@@ -26,6 +26,10 @@ export const MenuItemContainer = styled.div`
   }
   &:last-child {
     margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
   }
 `;
 
